@@ -10,7 +10,7 @@ export class GeneralService {
 
   getProducts() {
     let token:string = "";
-    let url:string = "";
+    let url:string = "https://fruitvice.com/api/fruit/all";
     return this.client.get(url,{
       headers: {
         "Authorization": `Bearer {token}`
