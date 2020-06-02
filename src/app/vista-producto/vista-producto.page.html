@@ -1,9 +1,25 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>vista-producto</ion-title>
+    <ion-title>Producto</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-card *ngIf="product === null">
+    <ion-card-header>
+      Ocurrió un error :/
+    </ion-card-header>
+  </ion-card>
+  <ion-card *ngIf="product !== null">
+    <ion-card-header>
+      {{product.name}}
+      <ion-img src="{{product.img}}"></ion-img>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{product.desc}}</p><br>
+      <!--Video-->
+      <p>{{product.video}}</p>
+      <ion-button (click)="back()">Volver</ion-button> <!--Centrar botón?-->
+    </ion-card-content>
+  </ion-card>
 </ion-content>

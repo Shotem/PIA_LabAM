@@ -18,9 +18,7 @@
       Buscar producto
     </ion-card-header>
     <ion-card-content>
-      <ion-input ([ngModule])="productName">
-        <ion-icon name="search-outline"></ion-icon>
-      </ion-input>
+      <ion-searchbar placeholder="Buscar" (ionInput)="filter($event.target.value)"></ion-searchbar>
     </ion-card-content>
   </ion-card>
 
@@ -29,10 +27,10 @@
       Productos
     </ion-card-header>
     <ion-card-content>
-      <ion-list *ngFor="let product of products">
-        <ion-item>
-              <ion-avatar slot="start"><ion-img src="{{product.img}}"></ion-img></ion-avatar>
-              <ion-label>{{product.name}}</ion-label>
+      <ion-list>
+        <ion-item (click)="viewDetails(product)" *ngFor="let product of filteredProducts">
+          <ion-avatar slot="start"><ion-img src="{{product.img}}"></ion-img></ion-avatar>
+          <ion-label>{{product.name}}</ion-label>
         </ion-item>
       </ion-list>
     </ion-card-content>
