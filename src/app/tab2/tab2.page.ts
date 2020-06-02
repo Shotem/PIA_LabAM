@@ -55,7 +55,11 @@ export class Tab2Page {
       console.log(e);
     }
     
-    this.products.sort((a,b)=> (a.name < b.name)?1:0);
+    this.products.sort((a,b)=> {
+      if (a.name > b.name)return 1;
+      else if (a.name == b.name)return 0;
+      else return -1;
+    });
 
   }
 

@@ -24,19 +24,19 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-list *ngFor="let product of products">
-    <ion-item>
-      <ion-card>
-        <ion-card-header>
-          <ion-title>{{product.name}}</ion-title>
-        </ion-card-header>
-        <ion-card-content>
-          <p>{{product.desc}}</p><br>
-          <p>{{product.video}}</p><br>
-          <ion-img [src]="product.img"></ion-img>
-        </ion-card-content>
-      </ion-card>
-    </ion-item>
-  </ion-list>
+  <ion-card>
+    <ion-card-header>
+      Productos
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list *ngFor="let product of products">
+        <ion-item>
+              <ion-avatar slot="start"><ion-img src="{{product.img}}"></ion-img></ion-avatar>
+              <ion-label>{{product.name}}</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+ 
   
 </ion-content>
