@@ -19,28 +19,142 @@ export class Tab2Page {
     this.products = [
       {
         name:"Manzana",
-        desc:"Descripción",
+        desc:"Fruta roja jugosa con Vitamina C.",
         video:"",
-        img:"https://i.pinimg.com/564x/e4/f3/40/e4f3408cee71e3a925da85d1968a7e2d.jpg"
+        img:'/assets/img/Frutas/1.png',
       },
       {
-        name:"Banana",
-        desc:"Descripción",
+        name:"Platano",
+        desc:"Fruta muy buena en potasio.",
         video:"",
-        img:"https://ecomercioagrario.com/wp-content/uploads/2019/07/banana-2.jpg"
+        img:'/assets/img/Frutas/2.png',
       },
       {
         name:"Pera",
-        desc:"Descripción",
+        desc:"Fruta muy rica en calsio, hierro con vitaminas A, B1, B2, B3, C, E y K.",
         video:"",
-        img:"https://perfumesyfragancias.online/wp-content/uploads/2018/10/poire.jpg"
+        img:'/assets/img/Frutas/3.png',
       },
       {
         name:"Mango",
-        desc:"Descripción",
+        desc:"Fruta buena en sodio, magnecio con vitaminas A, B1, B2 y B3.",
         video:"",
-        img:"https://www.muyinteresante.com.mx/wp-content/uploads/2018/07/Mango-770x513.jpg"
-      }
+        img:'/assets/img/Frutas/4.png',
+      },
+      {
+        name:"Arándano",
+        desc:"Fruta rican en vitamina C. ",
+        video:"",
+        img:'/assets/img/Frutas/5.png',
+      },
+      {
+        name:"Frambuesa",
+        desc:"Fruta buena en vitamina C. ",
+        video:"",
+        img:'/assets/img/Frutas/6.png',
+      },
+      {
+        name:"Fresa",
+        desc:"Fruta roja con buen sabor, con vitamina B.",
+        video:"",
+        img:'/assets/img/Frutas/7.png',
+      },
+      {
+        name:"Zarzamora",
+        desc:"Fruta que ayuda a reducir el riesgo de contraer enfermedades del corazón con su vitamina C.",
+        video:"",
+        img:'/assets/img/Frutas/8.png',
+      },
+      {
+        name:"Limon",
+        desc:"Fruta acida de color verde, buena en vitamina C",
+        video:"",
+        img:'/assets/img/Frutas/9.png',
+      },
+      {
+        name:"Mandarina",
+        desc:"Fruta rica en sodio, con vitamina A,B Y C.",
+        video:"",
+        img:'/assets/img/Frutas/10.png',
+      },
+      {
+        name:"Naranja",
+        desc:"Fruta con poderoso antioxidante por la gran cantidad de Vitamina C que contiene.",
+        video:"",
+        img:'/assets/img/Frutas/11.png',
+      },
+      {
+        name:"Melón",
+        desc:"Fruta rica en vitamina C y beta-carotenos.",
+        video:"",
+        img:'/assets/img/Frutas/12.png',
+      },
+      {
+        name:"Sandía",
+        desc:"Fruta sin nada de colesterol que posee cantidades significativas de vitaminas A, B6.",
+        video:"",
+        img:'/assets/img/Frutas/13.png',
+      },
+      {
+        name:"Aguacate",
+        desc:"Fruta que incluye una amplia variedad de nutrientes, incluyendo 20 vitaminas y minerales.",
+        video:"",
+        img:'/assets/img/Frutas/14.png',
+      },
+      {
+        name:"Coco",
+        desc:"Fruta con vitamina E importante su acción antioxidante sobre la piel. ",
+        video:"",
+        img:'/assets/img/Frutas/15.png',
+      },
+      {
+        name:"Kiwi",
+        desc:"Fruta con mas vitamina C que la naraja.",
+        video:"",
+        img:'/assets/img/Frutas/16.png',
+      },
+      {
+        name:"Papaya",
+        desc:"Fruta acuosa de sabor dulce que aporta tan solo 43 calorías, con vitaminas A, B y C. ",
+        video:"",
+        img:'/assets/img/Frutas/17.png',
+      },
+      {
+        name:"Piña",
+        desc:"Fruta buena en yodo, sodio con vitaminas C, B1, B6 y B9. ",
+        video:"",
+        img:'/assets/img/Frutas/18.png',
+      },
+      {
+        name:"Durazno",
+        desc:"Fruta que contiene vitaminas del complejo B y C, con minerales como el potasio.",
+        video:"",
+        img:'/assets/img/Frutas/19.png',
+      },
+      {
+        name:"Cereza",
+        desc:"Fruta con excelente fuente de beta-caroteno, buena en vitamina C y E.",
+        video:"",
+        img:'/assets/img/Frutas/20.png',
+      },
+      {
+        name:"Ciruela",
+        desc:"Fruta rica en vitaminas C, K y E, así como en provitamina A en forma de carotenos.",
+        video:"",
+        img:'/assets/img/Frutas/21.png',
+      },
+      {
+        name:"Higo",
+        desc:"Fruta buena en calcio y fósforo con vitamina C.",
+        video:"",
+        img:'/assets/img/Frutas/22.png',
+      },
+      {
+        name:"Uva",
+        desc:"Fruta rica en antioxidante, y vitamina C.",
+        video:"",
+        img:'/assets/img/Frutas/23.png',
+      },
     ];
     try {
       this.general.getProducts().subscribe(
