@@ -1,5 +1,31 @@
-ion-toolbar img{
-    width: 35%;
-    margin-top: 5%;
-    margin-bottom:5%;
-  };
+
+ion-slide{
+  display: block;
+}
+
+
+ion-slides {
+  --bullet-background: #2CAFC4;
+  --bullet-background-active: #B3BEC0;
+}
+
+
+.double{
+  height: 50%;
+}
+
+.double p{
+ border-color: black;
+  width: 90%;
+  position: fixed;
+  margin-top:20%;
+  color: black;
+  font-size: 28px;
+  font-weight: bold;
+
+}
+
+.double img{
+  height: 100%;
+  object-fit: cover;
+}
