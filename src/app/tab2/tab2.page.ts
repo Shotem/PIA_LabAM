@@ -1,6 +1,8 @@
 import { Component, Input } from '@angular/core';
 import {Product} from 'src/app/classes/Product';
 import { GeneralService } from 'src/app/services/general.service';
+import { NavController } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-tab2',
@@ -9,10 +11,11 @@ import { GeneralService } from 'src/app/services/general.service';
 })
 export class Tab2Page {
   products: Product[];
+  filteredProducts: Product[];
 
   @Input() productName:string = "";
 
-  constructor(private general : GeneralService) {}
+  constructor(private general : GeneralService, private navCtrl: NavController) {}
 
   ionViewWillEnter() {
     console.log("Test");
@@ -156,6 +159,7 @@ export class Tab2Page {
         img:'/assets/img/Frutas/23.png',
       },
     ];
+
     try {
       this.general.getProducts().subscribe(
         (value:Product[])=> {
@@ -169,8 +173,27 @@ export class Tab2Page {
       console.log(e);
     }
     
-    this.products.sort((a,b)=> (a.name < b.name)?1:0);
+    this.products.sort((a,b)=> {
+      if (a.name > b.name)return 1;
+      else if (a.name == b.name)return 0;
+      else return -1;
+    });
+    this.filteredProducts = this.products;
 
+  }
+
+  public async viewDetails(product: Product) {
+    this.general.setProduct(product);
+    await this.navCtrl.navigateForward("vista-producto");
+  }
+
+  filter(filter:string){
+    if ( !this.products || !filter){
+      this.filteredProducts = this.products;
+    } else {
+      this.filteredProducts = this.products.filter(p=>p.name.toLowerCase().indexOf(filter.toLowerCase()) !== -1);
+    }
+    return;
   }
 
 }

@@ -5,6 +5,10 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+  },
+  {
+    path: 'vista-producto',
+    loadChildren: () => import('./vista-producto/vista-producto.module').then( m => m.VistaProductoPageModule)
   }
 ];
 @NgModule({
