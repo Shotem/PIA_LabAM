@@ -1,5 +1,7 @@
 {
   "name": "PIA_LabAM",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
