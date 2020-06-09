@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MapService } from '../services/map.service';
+import { NavController, AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab4',
@@ -9,7 +10,7 @@ import { MapService } from '../services/map.service';
 export class Tab4Page implements OnInit {
 
   constructor(
-    private map: MapService
+    private map: MapService,public navCtrl: NavController, public alerta:AlertController
   ) { }
 
   ngOnInit(): void{
@@ -22,6 +23,14 @@ export class Tab4Page implements OnInit {
       const lng = position.coords.longitude;
       this.map.initMap(lat, lng, 'map');
     });
+  }
+  async alertaBasica(){
+    let miAlerta = this.alerta.create({
+      message: 'Agradecemos tu opinión, nos pondremos en contacto.',
+      buttons: ['OK']
+    });
+ 
+    (await miAlerta).present();
   }
 
 }
