@@ -337,7 +337,7 @@ export class Tab2Page {
         desc:"Rica en ácidos grasos esenciales, que presenta un bajo contenido en grasas saturadas, y constituye una fuente de proteínas de excelente calidad.",
         video:"",
         img:'/assets/img/Legumbres/7.png',
-      },
+      },  
     ];
 
     try {
