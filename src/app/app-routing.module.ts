@@ -9,7 +9,11 @@ const routes: Routes = [
   {
     path: 'vista-producto',
     loadChildren: () => import('./vista-producto/vista-producto.module').then( m => m.VistaProductoPageModule)
+  },  {
+    path: 'tab4',
+    loadChildren: () => import('./tab4/tab4.module').then( m => m.Tab4PageModule)
   }
+
 ];
 @NgModule({
   imports: [
