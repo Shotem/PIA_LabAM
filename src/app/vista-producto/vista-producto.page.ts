@@ -16,7 +16,7 @@ export class VistaProductoPage implements OnInit {
   constructor(
     private general: GeneralService,
     private navCtrl: NavController,
-    private sanitizer: DomSanitizer
+    public sanitizer: DomSanitizer
     ) { }
 
   ngOnInit() {
