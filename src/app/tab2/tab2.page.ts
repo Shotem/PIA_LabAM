@@ -337,19 +337,7 @@ export class Tab2Page {
         desc:"Rica en ácidos grasos esenciales, que presenta un bajo contenido en grasas saturadas, y constituye una fuente de proteínas de excelente calidad.",
         video:"",
         img:'/assets/img/Legumbres/7.png',
-      },
-      {
-        name:"Papa  ",
-        desc:"Rico en vitaminas y minerales; en algunas regiones se convierte en la principal fuente de vitamina C en tiempos invernales.",
-        video:"",
-        img:'/assets/img/Verduras/25.jpg',
-      },
-      {
-        name:"Maiz",
-        desc:"El maíz es fuente de antioxidantes que combaten los radicales libres y el envejecimiento celular.",
-        video:"",
-        img:'/assets/img/Legumbres/27.jpg',
-      },
+      },  
     ];
 
     try {
