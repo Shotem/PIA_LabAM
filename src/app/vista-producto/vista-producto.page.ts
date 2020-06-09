@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Product } from 'src/app/classes/Product'
 import { GeneralService } from '../services/general.service';
 import { NavController } from '@ionic/angular';
+import { DomSanitizer } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-vista-producto',
@@ -11,7 +13,11 @@ import { NavController } from '@ionic/angular';
 export class VistaProductoPage implements OnInit {
   product: Product = null;
 
-  constructor(private general: GeneralService, private navCtrl: NavController) { }
+  constructor(
+    private general: GeneralService,
+    private navCtrl: NavController,
+    private sanitizer: DomSanitizer
+    ) { }
 
   ngOnInit() {
     
@@ -19,6 +25,12 @@ export class VistaProductoPage implements OnInit {
 
   ionViewWillEnter(){
     this.product = this.general.getProduct();
+  }
+
+  play():string {
+    
+    let link:string = this.product.video.replace("watch?v=", "embed/");
+    return link;
   }
 
   back(){

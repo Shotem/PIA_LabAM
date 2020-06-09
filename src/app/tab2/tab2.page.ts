@@ -23,25 +23,25 @@ export class Tab2Page {
       {
         name:"Manzana",
         desc:"Fruta roja jugosa con Vitamina C.",
-        video:"",
+        video:"https://www.youtube.com/watch?v=Ct6BUPvE2sM",
         img:'/assets/img/Frutas/1.png',
       },
       {
         name:"Brócoli",
         desc:"Excelente para mantener los huesos sanos y fuertes, dado su contenido de calcio.",
-        video:"",
+        video:"https://www.youtube.com/watch?v=q-_G_Crh6ic",
         img:'/assets/img/Verduras/1.png',
       },
       {
         name:"Platano",
         desc:"Fruta muy buena en potasio.",
-        video:"",
+        video:"https://www.youtube.com/watch?v=5AGhCHBSMYA",
         img:'/assets/img/Frutas/2.png',
       },
       {
         name:"Remolacha",
         desc:"Es una excelente fuente de ácido fólico, así como de vitamina C y potasio.",
-        video:"",
+        video:"https://www.youtube.com/watch?v=Qcm00coGGuA",
         img:'/assets/img/Verduras/2.png',
       },
       {
@@ -227,7 +227,7 @@ export class Tab2Page {
       {
         name:"Piña",
         desc:"Fruta buena en yodo, sodio con vitaminas C, B1, B6 y B9. ",
-        video:"",
+        video:"https://www.youtube.com/watch?v=Ct6BUPvE2sM",
         img:'/assets/img/Frutas/18.png',
       },
       {

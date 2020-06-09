@@ -9,6 +9,7 @@
     <ion-card-header>
       Ocurrió un error :/
     </ion-card-header>
+    <ion-button (click)="back()">Volver</ion-button>
   </ion-card>
   <ion-card *ngIf="product !== null">
     <ion-card-header>
@@ -18,10 +19,12 @@
     <ion-card-content>
       <p>{{product.desc}}</p><br>
       <!--Video-->
-      <p>{{product.video}}</p>
+      <iframe [src]="sanitizer.bypassSecurityTrustResourceUrl(play())" allow="autoplay;" frameborder="0"
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
       <div class="centrado">
       <ion-button (click)="back()" fill="outline">Volver</ion-button> <!--Centrar botón?-->
     </div>
+      
     </ion-card-content>
   </ion-card>
 </ion-content>
