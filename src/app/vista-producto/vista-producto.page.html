@@ -9,7 +9,9 @@
     <ion-card-header>
       Ocurrió un error :/
     </ion-card-header>
-    <ion-button (click)="back()">Volver</ion-button>
+    <div class="centrado">
+      <ion-button (click)="back()" fill="outline">Volver</ion-button>
+    </div>
   </ion-card>
   <ion-card *ngIf="product !== null">
     <ion-card-header>
@@ -22,7 +24,7 @@
       
       <div class="centrado">
         <iframe [src]="sanitizer.bypassSecurityTrustResourceUrl(play())" allow="autoplay;" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen *ngIf="product.video !== ''"></iframe><br>
-        <ion-button (click)="back()" fill="outline">Volver</ion-button> <!--Centrar botón?-->
+        <ion-button (click)="back()" fill="outline">Volver</ion-button>
       </div>
       
     </ion-card-content>

@@ -18,7 +18,6 @@ export class Tab2Page {
   constructor(private general : GeneralService, private navCtrl: NavController) {}
 
   ionViewWillEnter() {
-    console.log("Test");
     this.products = [
       {
         name:"Manzana",
