@@ -1,38 +1,54 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Contáctanos
+      ¿Quiénes somos?
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   
-<ion-card>
-  <img src="assets/img/Contact/contactanos.jpg" alt="Contáctanos">
-  <ion-card-header>
-  <ion-card-title>¿En qué podemos ayudarte?</ion-card-title>
-  <ion-card-subtitle>Déjanos un mensaje con tu nombre y algún correo electrónico para comunicarnos contigo!</ion-card-subtitle>
-  </ion-card-header>
+  <ion-card color="success" button="true" >
+    <img src="assets/img/Contact/farm.jpg">
+    <ion-card-header>
+      <ion-card-title color="light">¡Bienvenidos a FarmFood!</ion-card-title>
+    </ion-card-header>
 
-  <ion-item>
-    <ion-label position="floating">Nombre</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
 
-  <ion-item>
-    <ion-label position="floating">Correo Electrónico</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+    <ion-card-content>
+      <ion-item lines="full">
+        <ion-avatar slot="start">
+          <img src="assets/img/Contact/farmer.jpg">
+        </ion-avatar>
+        <ion-label color="success">
+          Juan Pérez
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label class="ion-text-wrap">Hola, mi nombre es Juan Pérez y soy agricultor.<br> FarmFood es una aplicación creada en colaboración con estudiantes de la FCFM. Nos da la oportunidad de invitarte a que conozcas nuestro trabajo. 
+        <br>
+        <br>
+        Actualmente contamos con dos sembradíos, ambos con alimento de excelente calidad, nuestros productos principales en el primer sembradío son la <ion-text color="success">papa</ion-text>, <ion-text color="success">frijol</ion-text> y <ion-text color="success">maíz</ion-text>.
+        <br>
+        En nuestro segundo sembradío contamos con una gran variedad de frutas, entre ellas; <ion-text color="success">sandía</ion-text>, <ion-text color="success">melón</ion-text> y <ion-text color="success">naranja</ion-text>.
+        <br>
+        <br>
+        ¡Te invitamos a que conozcas nuestro equipo y lugar de trabajo!
+        </ion-label>
 
-  <ion-item>
-    <ion-label position="floating">Descripción</ion-label> 
-    <ion-textarea></ion-textarea>
-  </ion-item>
-</ion-card>
+      </ion-item>
+
+    </ion-card-content>
+  </ion-card>
   
+  <div id="visitanos">
+    <ion-button href="tab4" color="success" fill="outline">Visítanos</ion-button>
+  </div>
 
-  <div id="map"></div>
-  <ion-button (click)="getCurrentPosition()" size="default" fill="outline" color="danger">Mostrar mi ubicación</ion-button>
+  <ion-footer class="ion-no-border">
+    <ion-toolbar>
+      
+    </ion-toolbar>
+  </ion-footer>
 
 </ion-content>
